@@ -32,6 +32,7 @@ export const getDb = async () => {
   const request = store.get(1);
   const result = await request;
   result? console.log("data in the database", result.value):console.log("nothing in the database")
+  return result?.value
 }
 
 initdb();
